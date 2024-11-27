@@ -1,0 +1,37 @@
+name: bounce_game
+description: A simple game.
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  countup: ^0.1.4
+  cupertino_icons: ^1.0.8
+  google_fonts: 6.2.1
+  provider: 6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  icons_launcher: ^3.0.0
+
+# dart run icons_launcher:create
+icons_launcher:
+  image_path: "assets/app_icon.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+    web:
+      enable: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
